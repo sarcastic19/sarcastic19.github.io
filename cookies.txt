@@ -1,9 +1,7 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-.secitsecurity.com	TRUE	/	FALSE	1999999999	__cfduid	d5a699e72e02c5c2c8569bfe7d8cf1f0c1578569349
+.secitsecurity.com	TRUE	/	FALSE	1999999999	__cfduid	de4f82dd63dfae77cf99805d976ff97311578569970
 www.secitsecurity.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-.openlink.rs	TRUE	/	FALSE	1999999999	__cfduid	de5f305d466c8e9a5d3edd640cfe0c10e1578569356
+.openlink.rs	TRUE	/	FALSE	1999999999	__cfduid	dc8e49d0625ca948e60fe0eef99577ab81578569974
 cdn.openlink.rs	TRUE	/	FALSE	1999999999	SameSite	Lax
-cdn.openlink.rs	TRUE	/	FALSE	1999999999	cf_ob_info	502:552613574f97dddf:SIN
-cdn.openlink.rs	TRUE	/	FALSE	1999999999	cf_use_ob	443
 

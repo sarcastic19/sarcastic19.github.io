@@ -1,4 +1,4 @@
-HTTrack3.49-2+htsswf+htsjava launched on Thu, 09 Jan 2020 16:59:05 at https://www.secitsecurity.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 09 Jan 2020 17:09:29 at https://www.secitsecurity.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
 (winhttrack -qwr3C2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.secitsecurity.com/ -O1 "S:\Web copies\Website 0109" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
@@ -6,48 +6,47 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-16:59:59	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.secitsecurity.com/)
-16:59:59	Warning: 	Link https://www.secitsecurity.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
-17:01:14	Warning: 	Retry after error 502 (Bad Gateway) at link https://cdn.openlink.rs/secitsecurity/sr-latn/wp-content/uploads/2019/12/19035521/partner-t-2019-08-30-economic-chamber-of-macedonia-400x245.png (from https://www.secitsecurity.com/)
-17:01:24	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/wp-content/themes/openlink-theme/assets/dist/css/`owl.carousel/dist/assetsowl.video.play.png (from https://www.secitsecurity.com/wp-content/themes/openlink-theme/assets/dist/css/style.css)
-17:01:24	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=213
-17:01:24	Warning: 	File has moved from https://www.secitsecurity.com/?p=213 to https://www.secitsecurity.com/o-nama/
-17:01:24	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=245
-17:01:24	Warning: 	File has moved from https://www.secitsecurity.com/?p=245 to https://www.secitsecurity.com/reference/
-17:01:24	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=253
-17:01:24	Warning: 	File has moved from https://www.secitsecurity.com/?p=253 to https://www.secitsecurity.com/outsourcing-it-bezbednosti/
-17:01:25	Warning: 	Moved Permanently for https://www.secitsecurity.com/procena-bezbednosti/
-17:01:25	Warning: 	File has moved from https://www.secitsecurity.com/procena-bezbednosti/ to https://www.secitsecurity.com/procena-bezbednosti-it-sistema/
-17:01:25	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=265
-17:01:25	Warning: 	File has moved from https://www.secitsecurity.com/?p=265 to https://www.secitsecurity.com/seminari/
-17:01:25	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=274
-17:01:25	Warning: 	File has moved from https://www.secitsecurity.com/?p=274 to https://www.secitsecurity.com/profesionalne-obuke/
-17:01:25	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/profesionalne-obuke/osnove-informacione-bezbednosti-bitsec/ (from https://www.secitsecurity.com/profesionalne-obuke/)
-17:01:25	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/profesionalne-obuke/napredna-obuka-informacione-bezbednosti-bitsec/ (from https://www.secitsecurity.com/profesionalne-obuke/)
-17:01:25	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=217
-17:01:25	Warning: 	File has moved from https://www.secitsecurity.com/?p=217 to https://www.secitsecurity.com/procena-bezbednosti-it-sistema/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=215
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=215 to https://www.secitsecurity.com/kontakt/
-17:01:29	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/kontakt/office@secitsecurity.com (from https://www.secitsecurity.com/kontakt/)
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=263
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=263 to https://www.secitsecurity.com/seminari/sajber-higijena/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=223
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=223 to https://www.secitsecurity.com/menadzment/doc-dr-igor-franc/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=235
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=235 to https://www.secitsecurity.com/menadzment/miodrag-ranisavljevic/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=224
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=224 to https://www.secitsecurity.com/menadzment/dr-nemanja-macek/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=236
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=236 to https://www.secitsecurity.com/menadzment/predrag-cujanovic/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=238
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=238 to https://www.secitsecurity.com/menadzment/dr-nada-arezina/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=392
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=392 to https://www.secitsecurity.com/pravila-koriscenja/
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=3
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=3 to https://www.secitsecurity.com/politika-privatnosti/
-17:01:29	Error: 	"Method Not Allowed" (405) at link https://www.secitsecurity.com/xmlrpc.php (from https://www.secitsecurity.com/politika-privatnosti/)
-17:01:29	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=394
-17:01:29	Warning: 	File has moved from https://www.secitsecurity.com/?p=394 to https://www.secitsecurity.com/kolacici/
+17:09:48	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.secitsecurity.com/)
+17:09:48	Warning: 	Link https://www.secitsecurity.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+17:10:45	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/wp-content/themes/openlink-theme/assets/dist/css/`owl.carousel/dist/assetsowl.video.play.png (from https://www.secitsecurity.com/wp-content/themes/openlink-theme/assets/dist/css/style.css)
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=213
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/?p=213 to https://www.secitsecurity.com/o-nama/
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=245
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/?p=245 to https://www.secitsecurity.com/reference/
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=253
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/?p=253 to https://www.secitsecurity.com/outsourcing-it-bezbednosti/
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/procena-bezbednosti/
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/procena-bezbednosti/ to https://www.secitsecurity.com/procena-bezbednosti-it-sistema/
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=265
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/?p=265 to https://www.secitsecurity.com/seminari/
+17:10:45	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=274
+17:10:45	Warning: 	File has moved from https://www.secitsecurity.com/?p=274 to https://www.secitsecurity.com/profesionalne-obuke/
+17:10:45	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/profesionalne-obuke/osnove-informacione-bezbednosti-bitsec/ (from https://www.secitsecurity.com/profesionalne-obuke/)
+17:10:45	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/profesionalne-obuke/napredna-obuka-informacione-bezbednosti-bitsec/ (from https://www.secitsecurity.com/profesionalne-obuke/)
+17:10:46	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=217
+17:10:46	Warning: 	File has moved from https://www.secitsecurity.com/?p=217 to https://www.secitsecurity.com/procena-bezbednosti-it-sistema/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=215
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=215 to https://www.secitsecurity.com/kontakt/
+17:10:51	Error: 	"Not Found" (404) at link https://www.secitsecurity.com/kontakt/office@secitsecurity.com (from https://www.secitsecurity.com/kontakt/)
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=263
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=263 to https://www.secitsecurity.com/seminari/sajber-higijena/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=223
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=223 to https://www.secitsecurity.com/menadzment/doc-dr-igor-franc/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=235
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=235 to https://www.secitsecurity.com/menadzment/miodrag-ranisavljevic/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=224
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=224 to https://www.secitsecurity.com/menadzment/dr-nemanja-macek/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=236
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=236 to https://www.secitsecurity.com/menadzment/predrag-cujanovic/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=238
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=238 to https://www.secitsecurity.com/menadzment/dr-nada-arezina/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=392
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=392 to https://www.secitsecurity.com/pravila-koriscenja/
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=3
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=3 to https://www.secitsecurity.com/politika-privatnosti/
+17:10:51	Error: 	"Method Not Allowed" (405) at link https://www.secitsecurity.com/xmlrpc.php (from https://www.secitsecurity.com/politika-privatnosti/)
+17:10:51	Warning: 	Moved Permanently for https://www.secitsecurity.com/?p=394
+17:10:51	Warning: 	File has moved from https://www.secitsecurity.com/?p=394 to https://www.secitsecurity.com/kolacici/
 
-HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 23 seconds : 222 links scanned, 197 files written (15555454 bytes overall) [3677269 bytes received at 25715 bytes/sec], 13790057 bytes transferred using HTTP compression in 148 files, ratio 11%, 8.8 requests per connection
-(6 errors, 36 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 22 seconds : 221 links scanned, 197 files written (15555415 bytes overall) [3672122 bytes received at 44781 bytes/sec], 13790018 bytes transferred using HTTP compression in 148 files, ratio 11%, 9.6 requests per connection
+(6 errors, 35 warnings, 0 messages)
