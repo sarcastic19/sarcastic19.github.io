@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="sr-RS">
+
+<!-- Mirrored from www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2020 11:31:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+        #ol-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 2000;
+        }
+
+        .pace {
+            -webkit-pointer-events: none;
+            pointer-events: none;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .pace-inactive {
+            display: none;
+        }
+
+        .pace .pace-progress {
+            background: #002753;
+            position: fixed;
+            z-index: 2001;
+            top: 0;
+            right: 100%;
+            width: 100%;
+            height: 3px;
+        }
+    </style>
+<title>Hakovanje auotomobila - SECIT Security</title>
+
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="sr_RS" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Hakovanje auotomobila - SECIT Security" />
+<meta property="og:description" content="Razvoj u auto industriji je u poslednje vreme polako krenuo ka autonomnim automobilima koji sami mogu da se kreću dok vozač za to vreme može da čita mailove, gleda vesti ili radi nešto drugo na svom tabletu ili računaru koji je ugrađen u automobil a sve to pokrenuto je strujom to jest elektromotorom koji ne zagađuje životnu..." />
+<meta property="og:url" content="https://www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/" />
+<meta property="og:site_name" content="SECIT Security" />
+<meta property="article:section" content="Uncategorized" />
+<meta property="article:published_time" content="2017-06-28T09:43:10+00:00" />
+<meta property="article:modified_time" content="2019-08-29T01:14:13+00:00" />
+<meta property="og:updated_time" content="2019-08-29T01:14:13+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Razvoj u auto industriji je u poslednje vreme polako krenuo ka autonomnim automobilima koji sami mogu da se kreću dok vozač za to vreme može da čita mailove, gleda vesti ili radi nešto drugo na svom tabletu ili računaru koji je ugrađen u automobil a sve to pokrenuto je strujom to jest elektromotorom koji ne zagađuje životnu..." />
+<meta name="twitter:title" content="Hakovanje auotomobila - SECIT Security" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.secitsecurity.com/#website","url":"https://www.secitsecurity.com/","name":"SECIT Security","description":"Agencija za informacionu bezbednost i digitalnu forenziku","potentialAction":{"@type":"SearchAction","target":"https://www.secitsecurity.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/#webpage","url":"https://www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/","inLanguage":"sr-RS","name":"Hakovanje auotomobila - SECIT Security","isPartOf":{"@id":"https://www.secitsecurity.com/#website"},"datePublished":"2017-06-28T09:43:10+00:00","dateModified":"2019-08-29T01:14:13+00:00","author":{"@id":"https://www.secitsecurity.com/#/schema/person/d7f83f2049da3b94ebaaaf8dd07a2493"}},{"@type":["Person"],"@id":"https://www.secitsecurity.com/#/schema/person/d7f83f2049da3b94ebaaaf8dd07a2493","name":"Uro\u0161 Jovovi\u0107","image":{"@type":"ImageObject","@id":"https://www.secitsecurity.com/#authorlogo","url":"https://secure.gravatar.com/avatar/4c9bd109126fda493d563e8d4d82f12d?s=96&d=mm&r=g","caption":"Uro\u0161 Jovovi\u0107"},"sameAs":[]}]}</script>
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod komentara" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod komentara na Hakovanje auotomobila" href="https://www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='openlink-style-css' href='../../../../wp-content/themes/openlink-theme/assets/dist/css/style.css' type='text/css' media='all' />
+<style id='openlink-style-inline-css' type='text/css'>
+a,a:visited,a:visited,input[type="checkbox"]:before,.owl-carousel .owl-nav button.owl-prev:hover,.owl-carousel .owl-nav button.owl-next:hover,.ol-project-steps ul li span,.ol-program-instructors .ol-instructor .ol-title-pos h3 a:hover { color: #002753; }button,.ol-btn,input[type="button"],input[type="reset"],input[type="submit"],.ol-file-upload-label,.form-response.error,.ol-navigation .ol-menu-search .ol-search-widget,.owl-carousel .owl-dots .owl-dot.active span,.ui-datepicker .ui-datepicker-header,.ol-footer-red-menu a,.ol-technologies span { background-color: #002753; }.ol-reference .ol-refernce-inner { border-color: #002753; }a:hover, a:focus, a:active { color: #00336d }.ol-footer-red-menu a:hover, .ol-file-upload-label:hover, button:hover, .ol-btn:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background-color: #00336d }
+</style>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://www.secitsecurity.com/?p=323' />
+<link rel="alternate" type="application/json+oembed" href="https://www.secitsecurity.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.secitsecurity.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><script type="text/javascript">var Arrive=function(c,e,d){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var a,t,r=0,u=(a=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&a.call(e,t)},addMethod:function(e,t,a){var r=e[t];e[t]=function(){return a.length==arguments.length?a.apply(this,arguments):"function"==typeof r?r.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var a,r=0;a=e[r];r++)a&&a.callback&&a.callback.call(a.elem,a.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,a,r){for(var i,n=0;i=e[n];n++)a(i,t,r)&&r.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,a,r)},mergeArrays:function(e,t){var a,r={};for(a in e)e.hasOwnProperty(a)&&(r[a]=e[a]);for(a in t)t.hasOwnProperty(a)&&(r[a]=t[a]);return r},toElementsArray:function(e){return void 0===e||"number"==typeof e.length&&e!==c||(e=[e]),e}}),w=((t=function(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}).prototype.addEvent=function(e,t,a,r){var i={target:e,selector:t,options:a,callback:r,firedElems:[]};return this._beforeAdding&&this._beforeAdding(i),this._eventsBucket.push(i),i},t.prototype.removeEvent=function(e){for(var t,a=this._eventsBucket.length-1;t=this._eventsBucket[a];a--)if(e(t)){this._beforeRemoving&&this._beforeRemoving(t);var r=this._eventsBucket.splice(a,1);r&&r.length&&(r[0].callback=null)}},t.prototype.beforeAdding=function(e){this._beforeAdding=e},t.prototype.beforeRemoving=function(e){this._beforeRemoving=e},t),l=function(i,n){var l=new w,o=this,s={fireOnAttributesModification:!1};return l.beforeAdding(function(t){var e,a=t.target;a!==c.document&&a!==c||(a=document.getElementsByTagName("html")[0]),e=new MutationObserver(function(e){n.call(this,e,t)});var r=i(t.options);e.observe(a,r),t.observer=e,t.me=o}),l.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,a){t=u.mergeArrays(s,t);for(var r=u.toElementsArray(this),i=0;i<r.length;i++)l.addEvent(r[i],e,t,a)},this.unbindEvent=function(){var a=u.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<a.length;t++)if(this===d||e.target===a[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(a){var e,r=u.toElementsArray(this),i=a;e="function"==typeof a?function(e){for(var t=0;t<r.length;t++)if((this===d||e.target===r[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<r.length;t++)if((this===d||e.target===r[t])&&e.selector===a)return!0;return!1},l.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(a,r){var i=u.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===d||e.target===i[t])&&e.selector===a&&e.callback===r)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,a){return!(!u.matchesSelector(e,t.selector)||(e._id===d&&(e._id=r++),-1!=t.firedElems.indexOf(e._id))||(t.firedElems.push(e._id),0))}var c=(i=new l(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,a=e.target,r=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,r):"attributes"===e.type&&n(a,i)&&r.push({callback:i.callback,elem:a}),u.callCallbacks(r,i)})})).bindEvent;return i.bindEvent=function(e,t,a){t=void 0===a?(a=t,s):u.mergeArrays(s,t);var r=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<r.length;n++)for(var l=r[n].querySelectorAll(e),o=0;o<l.length;o++)i.push({callback:a,elem:l[o]});if(t.onceOnly&&i.length)return a.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,a)},i},o=new function(){var r={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new l(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,a=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,a),u.callCallbacks(a,r)})})).bindEvent;return o.bindEvent=function(e,t,a){t=void 0===a?(a=t,r):u.mergeArrays(r,t),n.call(this,e,t,a)},o};e&&g(e.fn),g(HTMLElement.prototype),g(NodeList.prototype),g(HTMLCollection.prototype),g(HTMLDocument.prototype),g(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function s(e,t,a){u.addMethod(t,a,e.unbindEvent),u.addMethod(t,a,e.unbindEventWithSelectorOrCallback),u.addMethod(t,a,e.unbindEventWithSelectorAndCallback)}function g(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,"undefined"==typeof jQuery?null:jQuery,void 0);function check_webp_feature(e,t){var a=new Image;a.onload=function(){var e=0<a.width&&0<a.height;t(e)},a.onerror=function(){t(!1)},a.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e]}function ewwwLoadImages(e){var n="data-";function t(e,t){for(var a=["accesskey","align","alt","border","class","contenteditable","contextmenu","crossorigin","dir","draggable","dropzone","height","hidden","hspace","id","ismap","lang","longdesc","sizes","spellcheck","style","tabindex","title","translate","usemap","vspace","width","data-attachment-id","data-caption","data-comments-opened","data-event-trigger","data-height","data-highlight-color","data-highlight-border-color","data-highlight-border-opacity","data-highlight-border-width","data-highlight-opacity","data-image-meta","data-image-title","data-image-description","data-large_image_width","data-large_image_height","data-lazy","data-lazy-type","data-no-lazy","data-orig-size","data-permalink","data-width"],r=0,i=a.length;r<i;r++)ewwwAttr(t,a[r],e.getAttribute(n+a[r]));return t}if(e){for(var a=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,i=a.length;r<i;r++)ewwwAttr(a[r],"data-src",a[r].getAttribute("data-webp")),ewwwAttr(a[r],"data-thumbnail",a[r].getAttribute("data-webp-thumbnail"));for(r=0,i=(o=document.querySelectorAll(".rev_slider ul li")).length;r<i;r++){ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"));for(var l=1;l<11;)ewwwAttr(o[r],"data-param"+l,o[r].getAttribute("data-webp-param"+l)),l++}var o;for(r=0,i=(o=document.querySelectorAll(".rev_slider img")).length;r<i;r++)ewwwAttr(o[r],"data-lazyload",o[r].getAttribute("data-webp-lazyload"));var s=document.querySelectorAll("div.woocommerce-product-gallery__image");for(r=0,i=s.length;r<i;r++)ewwwAttr(s[r],"data-thumb",s[r].getAttribute("data-webp-thumb"))}var c=document.querySelectorAll("videos");for(r=0,i=c.length;r<i;r++)ewwwAttr(c[r],"poster",e?c[r].getAttribute("data-poster-webp"):c[r].getAttribute("data-poster-image"));var d=document.querySelectorAll("img.ewww_webp_lazy_load");for(r=0,i=d.length;r<i;r++){if(e){ewwwAttr(d[r],"data-lazy-srcset",d[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(d[r],"data-srcset",d[r].getAttribute("data-srcset-webp")),ewwwAttr(d[r],"data-lazy-src",d[r].getAttribute("data-lazy-src-webp")),ewwwAttr(d[r],"data-src",d[r].getAttribute("data-src-webp")),ewwwAttr(d[r],"data-orig-file",d[r].getAttribute("data-webp-orig-file")),ewwwAttr(d[r],"data-medium-file",d[r].getAttribute("data-webp-medium-file")),ewwwAttr(d[r],"data-large-file",d[r].getAttribute("data-webp-large-file"));var u=d[r].getAttribute("srcset");null!=u&&!1!==u&&u.includes("R0lGOD")&&ewwwAttr(d[r],"src",d[r].getAttribute("data-lazy-src-webp"))}d[r].className=d[r].className.replace(/\bewww_webp_lazy_load\b/,"")}var w=document.querySelectorAll(".ewww_webp");for(r=0,i=w.length;r<i;r++){var g=document.createElement("img");e?(ewwwAttr(g,"src",w[r].getAttribute("data-webp")),ewwwAttr(g,"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-large_image")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(g,"data-src",w[r].getAttribute("data-src")),ewwwAttr(g,"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(g,"src",w[r].getAttribute("data-img")),ewwwAttr(g,"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-large_image")),ewwwAttr(g,"data-src",w[r].getAttribute("data-src"))),g=t(w[r],g),w[r].parentNode.insertBefore(g,w[r].nextSibling),w[r].className=w[r].className.replace(/\bewww_webp\b/,"")}window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)});var t=0,a=setInterval(function(){"undefined"!=typeof galleries&&(ewwwNggParseGalleries(e),clearInterval(a)),1e3<(t+=25)&&clearInterval(a)},25)}function ewwwAttr(e,t,a){null!=a&&!1!==a&&e.setAttribute(t,a)}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var a=galleries[t];galleries[t].images_list=ewwwNggParseImageList(a.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var a=$(e).data("id");return galleries["gallery_"+a].images_list=ewwwNggParseImageList(galleries["gallery_"+a].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var a=e[t];if(void 0!==a["image-webp"]&&(e[t].image=a["image-webp"],delete e[t]["image-webp"]),void 0!==a["thumb-webp"]&&(e[t].thumb=a["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==a.full_image_webp&&(e[t].full_image=a.full_image_webp,delete e[t].full_image_webp),void 0!==a.srcsets)for(var r in a.srcsets)nggSrcset=a.srcsets[r],void 0!==a.srcsets[r+"-webp"]&&(e[t].srcsets[r]=a.srcsets[r+"-webp"],delete e[t].srcsets[r+"-webp"]);if(void 0!==a.full_srcsets)for(var i in a.full_srcsets)nggFSrcset=a.full_srcsets[i],void 0!==a.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=a.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-557BPPZ');</script>
+</head>
+<body class="post-template-default single single-post postid-323 single-format-standard">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-557BPPZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="ol-preloader"></div>
+
+<div class="ol-cookie-notice">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col">
+<p>Sajt secitsecurity.com koristi kolačiće (cookies) koji ne sadrže lične podatke i služe radi poboljšanja korisničkog iskustva veb stranice. Prisutnost na veb sajtu, podrazumeva da se posetioci slažu sa korišćenjem ovih kolačića. Za više detalja o zaštiti podataka pročitajte <a title="Zaštita privatnosti" href="#">Zaštitu privatnosti</a>.</p>
+</div>
+<div class="ol-col">
+<a href="#" class="ol-btn" id="confirm-cookie">
+Prihvatam </a>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="ol-header">
+<div class="ol-header-top">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-header-top-inner">
+<div class="ol-header-left">
+<p>Ljudi su najveći potencijal</p>
+</div>
+<div class="ol-header-right">
+<button id="header-contact-opener">
+<i class="ion-information-circled"></i> Kontakt </button>
+<div class="ol-search-opener">
+<button><i class="ion-search"></i>Pretraga</button>
+</div>
+<div class="ol-search-widget">
+<form id="header-search-form" action="https://www.secitsecurity.com/">
+<input type="search" name="s" placeholder="Pretraži..." value="">
+<button type="submit"><i class="ion-search"></i></button>
+</form>
+</div>
+<div class="ol-lang-switcher">
+<ul>
+<li class="active"><a href="https://network.openlink.rs/" title="Srpski (latinica)">SR</a></li>
+</ul>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="ol-header-contact" id="header-contact">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col text-center info-box">
+<i class="ion-location"></i>
+<p>Vojvođanski Bulevar 14/15, Pančevo</p>
+</div>
+<div class="ol-col text-center info-box">
+<i class="ion-iphone"></i>
+<p>+381 65 8338 028</p>
+</div>
+<div class="ol-col text-center info-box">
+<i class="ion-email"></i>
+<p><a href="../../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b5dad3d3dcd6d0f5c6d0d6dcc1c6d0d6c0c7dcc1cc9bd6dad8">[email&#160;protected]</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="ol-header-bottom">
+<div class="ol-container">
+<div class="ol-header-inner">
+<div class="ol-logo-holder">
+<a href="../../../../index.html">
+<img src="https://static.openlink.rs/logotypes/secit-security.svg" alt="SECIT Security" title="SECIT Security"> </a>
+<div class="ol-tagline">
+<p>Agencija za informacionu bezbednost i digitalnu forenziku</p>
+</div>
+</div>
+<button class="ol-nav-opener">
+<span></span>
+</button>
+<nav class="ol-navigation"><ul id="primary-menu" class="menu"><li class="ol-menu-search">
+<div class="ol-search-widget">
+<form action="https://www.secitsecurity.com/">
+<input type="search" name="s" placeholder="Pretraga">
+<button type="submit"><i class="ion-search"></i></button>
+</form>
+</div>
+</li><li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-202"><a href="../../../../index.html">Početna</a></li>
+<li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-391"><a href="../../../../o-nama/index.html">O nama</a><i class="sub-open ion-chevron-down"></i>
+<ul class="sub-menu">
+<li id="menu-item-243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-243"><a href="../../../../menadzment/index.html">Naš tim</a></li>
+<li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a href="../../../../reference/index.html">Reference</a></li>
+</ul>
+</li>
+<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="../../../../outsourcing-it-bezbednosti/index.html">Outsourcing IT bezbednosti</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="../../../../seminari/index.html">Seminari</a></li>
+<li id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="../../../../profesionalne-obuke/index.html">Profesionalne obuke</a></li>
+<li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../../../../procena-bezbednosti-it-sistema/index.html">Procena bezbednosti IT sistema</a></li>
+<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-398"><a href="../../../index.html">Blog</a></li>
+<li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+</ul></nav> </div>
+</div>
+</div>
+</header>
+ 
+<div id="page-content">
+<div class="ol-container">
+<div class="ol-breadcrumbs"><ul><li><a href="../../../../index.html">SECIT Security</a></li><li><a href="../../../index.html">Blog</a></li><li><a href="https://www.secitsecurity.com/blog/2017/">2017</a></li><li><a href="https://www.secitsecurity.com/blog/2017/06/">jun</a></li><li class="active">Hakovanje auotomobila</li></ul></div>
+
+<div class="ol-content-wrapper ol-sidebar-right">
+<div class="ol-row"><main class="ol-col ol-col-3-4">
+<article id="post-323" class="post-323 post type-post status-publish format-standard hentry category-uncategorized">
+<div class="ol-title">
+<h1>Hakovanje auotomobila</h1> <div class="ol-meta">
+<span class="posted-on"><i class="ion-ios-calendar-outline"></i> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2017-06-28T11:43:10+02:00">28/06/2017</time><time class="updated" datetime="2019-08-29T03:14:13+02:00">29/08/2019</time></a></span><span><i class="ion-ios-clock-outline"></i> <a href="index.html" rel="bookmark">11:43</a></span><span><i class="ion-ios-person"></i> Igor Franc</span><span><i class="ion-ios-timer-outline"></i> 7 minuta</span> </div>
+</div>
+<div class="ol-post-excerpt"><p>Razvoj u auto industriji je u poslednje vreme polako krenuo ka autonomnim automobilima koji sami mogu da se kreću dok vozač za to vreme može da čita mailove, gleda vesti ili radi nešto drugo na svom tabletu ili računaru koji je ugrađen u automobil a sve to pokrenuto je strujom to jest elektromotorom koji ne zagađuje životnu&#8230;</p>
+</div>
+<div class="clear">
+<p>Razvoj u auto industriji je u poslednje vreme polako krenuo ka <a href="https://en.wikipedia.org/wiki/Autonomous_car">autonomnim automobilima</a> koji sami mogu da se kreću dok vozač za to vreme može da čita mailove, gleda vesti ili radi nešto drugo na svom tabletu ili računaru koji je ugrađen u automobil a sve to pokrenuto je strujom to jest elektromotorom koji ne zagađuje životnu sredinu. Međutim potrebno je analizirati još jednu stvar koja se javila pre ovakvih automobila a to je uvođenje sve više elektronike i u obične automobile. Ako pogledate automobile iz 90-tih videćete da tu nema preterano elektronike za razliku od savremenijih automobila koji su proizvedeni posle 1996-te godine. To je sa jedne strane izuzetno dobra stvar jer auto servisi mogu lako za par minuta da očitaju sve parametre i da utvrde da li postoji neki problem sa automobilom. Ovo se radi preko standardnog <a href="https://www.makeuseof.com/tag/obd-ii-port-used/">OBD konektora</a> koji je univerzalan za sva vozila koja se prodaju u EU. Potreban je samo odgovarajući kabal za povezivanje i softver instaliran na laptop računaru da bi ovo mogli i sami da uradite na svom automobilu što autor ovog posta povremeno radi. Na ovaj način možete i obrisati neke greške koje se uočavaju kroz svetlenje određene lampice na instrument tabli, naravno ako nije neki kvar u pitanju.<br />
+Pored ovih veoma pozitivnih stavki pojavila se kao nuspojava još jedna negativna stvar a to je da sva ta elektronika omogućava hakerima da hakuju ovakav automobil i da izazovu određene probleme u vožnji ili da pogase sve zaštite koje je proizvođač ugradio najčešće, imobilajzer kontakt brave, poznatije kao kodiran ključ i na taj način ukradu automobil.</p>
+<h3>Kakva je stvarno situacija?</h3>
+<p>Tokom 2015 godine problem sigurnosti softvera u vozilima je postao gorući. Sredinom 2015 godine FCA je <a href="http://www.vrelegume.rs/vesti1/fca-povlaci-14-miliona-vozila-zbog-problema-sa-hakovanjem-brza-reakcija/">povukao 1,4 miliona vozila</a> zbog problema sa softverom. Konkretno bio je problem sa računarskim sistemom modela Jeep Cherokee koji je dozvolio &#8220;upad&#8221; hakerima koji su gotovo potpuno preuzeli kontrolu nad vozilom. Iako je ovaj događaj izuzetno medijski propraćen treba znati da ovo nije najveće hakovanje automobila.<br />
+Sistemi konekcije u vozilima imaju sposobnost da se povezuju na internet, što ih čini ranjivim u odnosu na spoljne pretnje. Upravo ovo je dovelo do kardinalnog propusta koji je otkriven u BMW-ovom <a href="https://jalopnik.com/bmws-can-now-be-hacked-through-a-web-browser-convienen-1783371533">Connected Drive</a> servisu, koji je omogućio istražiteljima da daljinskim putem zaključavaju i otključavaju vrata automobila, čime je potencijalno bilo pogođeno 2,2 miliona automobila. Pored ovoga veoma izuzetan <a href="https://www.computerworld.com/article/2886830/with-15-in-radio-shack-parts-14-year-old-hacks-a-car.html">slučaj</a> vezan je za uspešno hakovanje koje je izveo četrnaestogodišnjak, i to sa opremom iz „Radio Shacka“, vrednom tek petnaestak dolara.</p>
+<h3>Šta je sa poslednjim generacijama automobila?</h3>
+<p>Ovde je situacija mnogo ozbiljnija iz osnovnog razloga što ove poslednje generacije automobila osim što idu uglavnom na električni pogon imaju i opciju autonomne vožnje. Zamislite šta se sve može desiti ako hakeri hakuju takav automobil. To bi izazvalo mnogo veće probleme od toga da ne možete da startujete motor ili da vam se pale i gase brisači ili podižu i spuštaju stakla u toku vožnje što je dokazano da se lako može uraditi ali moguće je takođe i gašenje i paljenje motora, isključivanje ili uključivanje kočnica i svetala što je malo opasnije. U ovom slučaju autonomnih vozila scenario bi mogao da bude takav da ovakav automobil izazove saobraćajnu nesreću gde bi moglo biti ljudskih žrtava i veće materijalne štete. U pravnim krugovima se postavlja pitanje ko je odgovoran za ovakav događaj, proizvođač ili vlasnik automobila i ko bi trebalo da snosi trošak za nastalu štetu.<br />
+Proizvođači ovakvih automobila se trude da na svaki mogući način povećaju bezbednost svojih proizvoda. Ovde prednjači kompanije Tesla koja je još 2014 godine organizovala takmičenje u Pekingu sa nagradom od <a href="http://www.b92.net/automobili/vesti.php?yyyy=2014&amp;mm=07&amp;nav_id=875074">10.000$ za uspešno hakovanje</a> Tesla Modela S. Pored tesle velike napore ulaže i Volvo u bezbednost svojih autonomnim automobila a pošto smo ranije videli da ova kompanije uvodi mnogo inovacija vezanih za bezbednost vozila pre svih ostalih možemo očekivati da će oni ponuditi neke rešenja i za ovakva vozila.<br />
+Još jedan od proizvođača jeste Google koji razvija svoje vozila koje se može samo kretati. Ovde se javlja veliki problem što ovo vozilo pokreće Android operativni sistem zajedno sa google mapama što može predstavljati ozbiljan bezbenosni problem koji će se morati rešiti jer je ovaj sistem poznat hakerima i znaju kako ga lako mogu hakovati na mobilnim uređajima što će se najverovatnije preslikati i ovde. Čekamo da vidimo šta će google uraditi, trenutno je sve u fazi razvoja i google je za sada radio na pilot projektu sa <a href="https://www.nytimes.com/2016/12/13/technology/google-parent-company-spins-off-waymo-self-driving-car-business.html">Toyota hibridnim vozilom</a> ali je najavljeno da će sami proizvoditi svoju marku automobila.</p>
+<h3>Može li se hakovanje automobila uopšte sprečiti?</h3>
+<p>Proizvođači aktivno rade na rešavanju problema. Verovali ili ne Mercedes-Benz, BMW i Audi koriste kodiranu konekciju i „firewall“ radi prevencije hakovanja automobila. U SAD su čak predlagani odgovarajući zakoni, koji bi naterali proizvođače automobila da zaštite svoje sisteme sa jedne strane a sa druge vrlo rigorozne mere za one koji se bave hakovanjem automobila. Pošto mi na tržištu Srbije još uvek nemamo autonomne automobile a i veoma je mali broj električnih automobila onda ću na kraju ovog posta dati predlog kako da zaštitimo svoje automobile koje uglavnom svi imamo. Moj predlog jeste izmeštanje odnosno zamena OBD konektora tj. džeka koji možete uraditi kod većine auto električara ili kod specijalizovanih servisa koji se bave sistemima zaštite.</p>
+<p>Ovim dobijamo to da potencijalni lopov neće moći da se nakači sa svojim  laptop računarom jer je ovaj konektor uklonjen i nije odgovarajući tj. sasvim drugačije izgleda. Još jedna zanimljiva stvar jeste da su ovi zamenski konektori tako napravljeni da je raspored žica nasumičan što izuzeto otežava mogućnost da neko pogodi tačan raspored žica a čak i ako bi to pokušao da uradi bilo bi mu potrebno više desetina minuta što je u takvim situacijama nemoguće jer treba da ima vezu na minimum 5 žica da bi mogao bilo šta da uradi. Vi dobijate nastavak koji ne držite u automobilu i koji nosite jedino kada vozite automobil u servis i koji vraća ulaz na standardni OBD konektor. Autor bloga je na svom automobilu odmah dan nakon kupovine promenio ovaj konektor i preporuka svim čitaocima da to urade što pre kako bi eventulano sprečili hakovanje i krađu svog automobila, ovo posebno važi za popularne modele za krađu kod nas u Srbiji kao što su Golf, Passat, svi modeli Audi i veliki broj modela grupe Renault. Ono što ovde treba još naglasiti ukoliko se radi o vozilu Fiat Punto koji je takođe često na meti lopova u Beogradu ovo neće biti od pomoći jer za njega postoji drugi način i elektronika nije nešto što to može sprečiti.</p>
+</div>
+</article>
+<div class="ol-social-share"><ul><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F" target="_blank" rel="noreferrer"><i class="ion-social-facebook"></i></a></li><li><a href="https://twitter.com/home?status=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F" target="_blank" rel="noreferrer"><i class="ion-social-twitter"></i></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F&amp;title=Hakovanje%20auotomobila&amp;summary=Razvoj%20u%20auto%20industriji%20je%20u%20poslednje%20vreme%20polako%20krenuo%20ka%c2%a0autonomnim%20automobilima%c2%a0koji%20sami%20mogu%20da%20se%20kre%c4%87u%20dok%20voza%c4%8d%20za%20to%20vreme%20mo%c5%bee%20da%20%c4%8dita%20mailove,%20gleda%20vesti%20ili%20radi%20ne%c5%a1to%20drugo%20na%20svom%20tabletu%20ili%20ra%c4%8dunaru%20koji%20je%20ugra%c4%91en%20u%20automobil%20a%20sve%20to%20pokrenuto%20je%20strujom%20to%20jest%20elektromotorom%20koji%20ne%20zaga%c4%91uje%20%c5%beivotnu...&amp;source=" target="_blank" rel="noreferrer"><i class="ion-social-linkedin"></i></a></li><li><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F" target="_blank" rel="noreferrer"><i class="ion-social-googleplus"></i></a></li><li><a href="https://pinterest.com/pin/create/button/?url=&amp;media=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2017%2F06%2Fhakovanje-auotomobila%2F&amp;description=Razvoj%20u%20auto%20industriji%20je%20u%20poslednje%20vreme%20polako%20krenuo%20ka%c2%a0autonomnim%20automobilima%c2%a0koji%20sami%20mogu%20da%20se%20kre%c4%87u%20dok%20voza%c4%8d%20za%20to%20vreme%20mo%c5%bee%20da%20%c4%8dita%20mailove,%20gleda%20vesti%20ili%20radi%20ne%c5%a1to%20drugo%20na%20svom%20tabletu%20ili%20ra%c4%8dunaru%20koji%20je%20ugra%c4%91en%20u%20automobil%20a%20sve%20to%20pokrenuto%20je%20strujom%20to%20jest%20elektromotorom%20koji%20ne%20zaga%c4%91uje%20%c5%beivotnu..." target="_blank" rel="noreferrer"><i class="ion-social-pinterest"></i></a></li><li><a href="../../../../cdn-cgi/l/email-protection.html#8fb0a9fcfaede5eaecfbb2c7eee4e0f9eee1e5eaafeefae0fbe0e2e0ede6e3eea9ede0ebf6b2e7fbfbfffcb5a0a0f8f8f8a1fceaece6fbfceaecfafde6fbf6a1ece0e2a0ede3e0e8a0bdbfbeb8a0bfb9a0e7eee4e0f9eee1e5eaa2eefae0fbe0e2e0ede6e3eea0" target="_blank" rel="noreferrer"><i class="ion-email"></i></a></li></ul></div>
+<nav class="navigation post-navigation" role="navigation" aria-label="Članci">
+<h2 class="screen-reader-text">Kretanje članka</h2>
+<div class="nav-links"><div class="nav-previous"><a href="../ozloglasena-jeziva-igra-plavi-kit-ili-nesto-vise-od-toga/index.html" rel="prev">Prethodni post</a></div><div class="nav-next"><a href="../../07/koji-je-operativni-sistem-za-desktop-najsigurniji/index.html" rel="next">Sledeći post</a></div></div>
+</nav>
+</main><aside id="secondary" class="widget-area ol-sidebar ol-col ol-col-4"><div id="nav_menu-2" class="widget widget_nav_menu ol-widget"><h3 class="widget-title">SECIT Security</h3><div class="menu-footer-buttons-menu-container"><ul id="menu-footer-buttons-menu" class="menu"><li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-271"><a href="../../../index.html">Blog</a></li>
+</ul></div></div></aside></div>
+</div>
+
+</div>
+</div>
+
+<footer class="ol-footer">
+<div class="ol-footer-flag">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="ol-footer-top">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-col-3">
+<a href="../../../../index.html">
+<img src="https://static.openlink.rs/logotypes/openlink-group-white.svg" class="ol-footer-logo" alt="OpenLink Group Logo" title="OpenLink Group Logo"> </a>
+</div>
+<div class="ol-col ol-col-3 text-center">
+<h4>Pratite nas na</h4><ul class="ol-social-links"><li><a href="https://www.facebook.com/secitserbia/"><i class="ion-social-facebook"></i></a></li><li><a href="https://www.linkedin.com/company/secit-security-consulting"><i class="ion-social-linkedin"></i></a></li></ul> </div>
+<div class="ol-col ol-col-3 text-right">
+<ul id="menu-footer-buttons-menu-1" class="ol-footer-red-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-271"><a href="../../../index.html">Blog</a></li>
+</ul> </div>
+</div>
+</div>
+</div>
+<div class="ol-footer-bottom">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-col-2">
+<ul id="menu-footer-menu" class="ol-footer-menu"><li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="../../../../pravila-koriscenja/index.html">Pravila korišćenja</a></li>
+<li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-403"><a href="../../../../politika-privatnosti/index.html">Politika privatnosti</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="../../../../kolacici/index.html">Kolačići</a></li>
+</ul> </div>
+<div class="ol-col ol-col-2 text-right">
+<p>Copyright © 2008 &#8211; 2019 OpenLink Grupa. Sva prava zadržana.<br />
+OpenLink Grupa nije odgovorna za sadržaj spoljnih sajtova.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript'>
+/* <![CDATA[ */
+var OL = {"ajaxUrl":"https:\/\/www.secitsecurity.com\/wp-admin\/admin-ajax.php","cookie_expiration":"7"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../wp-content/themes/openlink-theme/assets/dist/js/script.js' defer onload=''></script>
+<script type='text/javascript' src='https://www.secitsecurity.com/wp-includes/js/comment-reply.min.js' defer onload=''></script>
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js' defer onload=''></script>
+</body>
+
+<!-- Mirrored from www.secitsecurity.com/blog/2017/06/hakovanje-auotomobila/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2020 11:31:27 GMT -->
+</html>

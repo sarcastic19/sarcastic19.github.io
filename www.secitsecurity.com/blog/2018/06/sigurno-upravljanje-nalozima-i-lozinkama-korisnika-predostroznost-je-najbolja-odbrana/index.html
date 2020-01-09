@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="sr-RS">
+
+<!-- Mirrored from www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2020 11:31:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+        #ol-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 2000;
+        }
+
+        .pace {
+            -webkit-pointer-events: none;
+            pointer-events: none;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .pace-inactive {
+            display: none;
+        }
+
+        .pace .pace-progress {
+            background: #002753;
+            position: fixed;
+            z-index: 2001;
+            top: 0;
+            right: 100%;
+            width: 100%;
+            height: 3px;
+        }
+    </style>
+<title>Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana - SECIT Security</title>
+
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="sr_RS" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana - SECIT Security" />
+<meta property="og:description" content="U vreme sve sofisticiranijih sajber napada koji prete da izazovu pogubne gubitke u poslovanju, prve mere zaštite odnose se na sigurno upravljanje nalozima i lozinkama korisnika. Da biste ih efikasno primenili, potrebno je da znate i na koji način razmišljaju hakeri, i šta je redosled najvažnijih koraka u odbrani od sajber zloupotreba. Sajber napadi mogu..." />
+<meta property="og:url" content="https://www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/" />
+<meta property="og:site_name" content="SECIT Security" />
+<meta property="article:section" content="Uncategorized" />
+<meta property="article:published_time" content="2018-06-04T09:52:43+00:00" />
+<meta property="article:modified_time" content="2019-08-29T01:14:11+00:00" />
+<meta property="og:updated_time" content="2019-08-29T01:14:11+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="U vreme sve sofisticiranijih sajber napada koji prete da izazovu pogubne gubitke u poslovanju, prve mere zaštite odnose se na sigurno upravljanje nalozima i lozinkama korisnika. Da biste ih efikasno primenili, potrebno je da znate i na koji način razmišljaju hakeri, i šta je redosled najvažnijih koraka u odbrani od sajber zloupotreba. Sajber napadi mogu..." />
+<meta name="twitter:title" content="Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana - SECIT Security" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.secitsecurity.com/#website","url":"https://www.secitsecurity.com/","name":"SECIT Security","description":"Agencija za informacionu bezbednost i digitalnu forenziku","potentialAction":{"@type":"SearchAction","target":"https://www.secitsecurity.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/#webpage","url":"https://www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/","inLanguage":"sr-RS","name":"Sigurno upravljanje nalozima i lozinkama korisnika: Predostro\u017enost je najbolja odbrana - SECIT Security","isPartOf":{"@id":"https://www.secitsecurity.com/#website"},"datePublished":"2018-06-04T09:52:43+00:00","dateModified":"2019-08-29T01:14:11+00:00","author":{"@id":"https://www.secitsecurity.com/#/schema/person/d7f83f2049da3b94ebaaaf8dd07a2493"}},{"@type":["Person"],"@id":"https://www.secitsecurity.com/#/schema/person/d7f83f2049da3b94ebaaaf8dd07a2493","name":"Uro\u0161 Jovovi\u0107","image":{"@type":"ImageObject","@id":"https://www.secitsecurity.com/#authorlogo","url":"https://secure.gravatar.com/avatar/4c9bd109126fda493d563e8d4d82f12d?s=96&d=mm&r=g","caption":"Uro\u0161 Jovovi\u0107"},"sameAs":[]}]}</script>
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod komentara" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="SECIT Security &raquo; dovod komentara na Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana" href="https://www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='openlink-style-css' href='../../../../wp-content/themes/openlink-theme/assets/dist/css/style.css' type='text/css' media='all' />
+<style id='openlink-style-inline-css' type='text/css'>
+a,a:visited,a:visited,input[type="checkbox"]:before,.owl-carousel .owl-nav button.owl-prev:hover,.owl-carousel .owl-nav button.owl-next:hover,.ol-project-steps ul li span,.ol-program-instructors .ol-instructor .ol-title-pos h3 a:hover { color: #002753; }button,.ol-btn,input[type="button"],input[type="reset"],input[type="submit"],.ol-file-upload-label,.form-response.error,.ol-navigation .ol-menu-search .ol-search-widget,.owl-carousel .owl-dots .owl-dot.active span,.ui-datepicker .ui-datepicker-header,.ol-footer-red-menu a,.ol-technologies span { background-color: #002753; }.ol-reference .ol-refernce-inner { border-color: #002753; }a:hover, a:focus, a:active { color: #00336d }.ol-footer-red-menu a:hover, .ol-file-upload-label:hover, button:hover, .ol-btn:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background-color: #00336d }
+</style>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://www.secitsecurity.com/?p=288' />
+<link rel="alternate" type="application/json+oembed" href="https://www.secitsecurity.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.secitsecurity.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><script type="text/javascript">var Arrive=function(c,e,d){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var a,t,r=0,u=(a=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&a.call(e,t)},addMethod:function(e,t,a){var r=e[t];e[t]=function(){return a.length==arguments.length?a.apply(this,arguments):"function"==typeof r?r.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var a,r=0;a=e[r];r++)a&&a.callback&&a.callback.call(a.elem,a.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,a,r){for(var i,n=0;i=e[n];n++)a(i,t,r)&&r.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,a,r)},mergeArrays:function(e,t){var a,r={};for(a in e)e.hasOwnProperty(a)&&(r[a]=e[a]);for(a in t)t.hasOwnProperty(a)&&(r[a]=t[a]);return r},toElementsArray:function(e){return void 0===e||"number"==typeof e.length&&e!==c||(e=[e]),e}}),w=((t=function(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}).prototype.addEvent=function(e,t,a,r){var i={target:e,selector:t,options:a,callback:r,firedElems:[]};return this._beforeAdding&&this._beforeAdding(i),this._eventsBucket.push(i),i},t.prototype.removeEvent=function(e){for(var t,a=this._eventsBucket.length-1;t=this._eventsBucket[a];a--)if(e(t)){this._beforeRemoving&&this._beforeRemoving(t);var r=this._eventsBucket.splice(a,1);r&&r.length&&(r[0].callback=null)}},t.prototype.beforeAdding=function(e){this._beforeAdding=e},t.prototype.beforeRemoving=function(e){this._beforeRemoving=e},t),l=function(i,n){var l=new w,o=this,s={fireOnAttributesModification:!1};return l.beforeAdding(function(t){var e,a=t.target;a!==c.document&&a!==c||(a=document.getElementsByTagName("html")[0]),e=new MutationObserver(function(e){n.call(this,e,t)});var r=i(t.options);e.observe(a,r),t.observer=e,t.me=o}),l.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,a){t=u.mergeArrays(s,t);for(var r=u.toElementsArray(this),i=0;i<r.length;i++)l.addEvent(r[i],e,t,a)},this.unbindEvent=function(){var a=u.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<a.length;t++)if(this===d||e.target===a[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(a){var e,r=u.toElementsArray(this),i=a;e="function"==typeof a?function(e){for(var t=0;t<r.length;t++)if((this===d||e.target===r[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<r.length;t++)if((this===d||e.target===r[t])&&e.selector===a)return!0;return!1},l.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(a,r){var i=u.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===d||e.target===i[t])&&e.selector===a&&e.callback===r)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,a){return!(!u.matchesSelector(e,t.selector)||(e._id===d&&(e._id=r++),-1!=t.firedElems.indexOf(e._id))||(t.firedElems.push(e._id),0))}var c=(i=new l(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,a=e.target,r=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,r):"attributes"===e.type&&n(a,i)&&r.push({callback:i.callback,elem:a}),u.callCallbacks(r,i)})})).bindEvent;return i.bindEvent=function(e,t,a){t=void 0===a?(a=t,s):u.mergeArrays(s,t);var r=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<r.length;n++)for(var l=r[n].querySelectorAll(e),o=0;o<l.length;o++)i.push({callback:a,elem:l[o]});if(t.onceOnly&&i.length)return a.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,a)},i},o=new function(){var r={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new l(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,a=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,a),u.callCallbacks(a,r)})})).bindEvent;return o.bindEvent=function(e,t,a){t=void 0===a?(a=t,r):u.mergeArrays(r,t),n.call(this,e,t,a)},o};e&&g(e.fn),g(HTMLElement.prototype),g(NodeList.prototype),g(HTMLCollection.prototype),g(HTMLDocument.prototype),g(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function s(e,t,a){u.addMethod(t,a,e.unbindEvent),u.addMethod(t,a,e.unbindEventWithSelectorOrCallback),u.addMethod(t,a,e.unbindEventWithSelectorAndCallback)}function g(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,"undefined"==typeof jQuery?null:jQuery,void 0);function check_webp_feature(e,t){var a=new Image;a.onload=function(){var e=0<a.width&&0<a.height;t(e)},a.onerror=function(){t(!1)},a.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e]}function ewwwLoadImages(e){var n="data-";function t(e,t){for(var a=["accesskey","align","alt","border","class","contenteditable","contextmenu","crossorigin","dir","draggable","dropzone","height","hidden","hspace","id","ismap","lang","longdesc","sizes","spellcheck","style","tabindex","title","translate","usemap","vspace","width","data-attachment-id","data-caption","data-comments-opened","data-event-trigger","data-height","data-highlight-color","data-highlight-border-color","data-highlight-border-opacity","data-highlight-border-width","data-highlight-opacity","data-image-meta","data-image-title","data-image-description","data-large_image_width","data-large_image_height","data-lazy","data-lazy-type","data-no-lazy","data-orig-size","data-permalink","data-width"],r=0,i=a.length;r<i;r++)ewwwAttr(t,a[r],e.getAttribute(n+a[r]));return t}if(e){for(var a=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,i=a.length;r<i;r++)ewwwAttr(a[r],"data-src",a[r].getAttribute("data-webp")),ewwwAttr(a[r],"data-thumbnail",a[r].getAttribute("data-webp-thumbnail"));for(r=0,i=(o=document.querySelectorAll(".rev_slider ul li")).length;r<i;r++){ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"));for(var l=1;l<11;)ewwwAttr(o[r],"data-param"+l,o[r].getAttribute("data-webp-param"+l)),l++}var o;for(r=0,i=(o=document.querySelectorAll(".rev_slider img")).length;r<i;r++)ewwwAttr(o[r],"data-lazyload",o[r].getAttribute("data-webp-lazyload"));var s=document.querySelectorAll("div.woocommerce-product-gallery__image");for(r=0,i=s.length;r<i;r++)ewwwAttr(s[r],"data-thumb",s[r].getAttribute("data-webp-thumb"))}var c=document.querySelectorAll("videos");for(r=0,i=c.length;r<i;r++)ewwwAttr(c[r],"poster",e?c[r].getAttribute("data-poster-webp"):c[r].getAttribute("data-poster-image"));var d=document.querySelectorAll("img.ewww_webp_lazy_load");for(r=0,i=d.length;r<i;r++){if(e){ewwwAttr(d[r],"data-lazy-srcset",d[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(d[r],"data-srcset",d[r].getAttribute("data-srcset-webp")),ewwwAttr(d[r],"data-lazy-src",d[r].getAttribute("data-lazy-src-webp")),ewwwAttr(d[r],"data-src",d[r].getAttribute("data-src-webp")),ewwwAttr(d[r],"data-orig-file",d[r].getAttribute("data-webp-orig-file")),ewwwAttr(d[r],"data-medium-file",d[r].getAttribute("data-webp-medium-file")),ewwwAttr(d[r],"data-large-file",d[r].getAttribute("data-webp-large-file"));var u=d[r].getAttribute("srcset");null!=u&&!1!==u&&u.includes("R0lGOD")&&ewwwAttr(d[r],"src",d[r].getAttribute("data-lazy-src-webp"))}d[r].className=d[r].className.replace(/\bewww_webp_lazy_load\b/,"")}var w=document.querySelectorAll(".ewww_webp");for(r=0,i=w.length;r<i;r++){var g=document.createElement("img");e?(ewwwAttr(g,"src",w[r].getAttribute("data-webp")),ewwwAttr(g,"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-large_image")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(g,"data-src",w[r].getAttribute("data-src")),ewwwAttr(g,"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(g,"src",w[r].getAttribute("data-img")),ewwwAttr(g,"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(g,"data-orig-file",w[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-medium-file",w[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-large-file",w[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large_image",w[r].getAttribute("data-large_image")),ewwwAttr(g,"data-src",w[r].getAttribute("data-src"))),g=t(w[r],g),w[r].parentNode.insertBefore(g,w[r].nextSibling),w[r].className=w[r].className.replace(/\bewww_webp\b/,"")}window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)});var t=0,a=setInterval(function(){"undefined"!=typeof galleries&&(ewwwNggParseGalleries(e),clearInterval(a)),1e3<(t+=25)&&clearInterval(a)},25)}function ewwwAttr(e,t,a){null!=a&&!1!==a&&e.setAttribute(t,a)}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var a=galleries[t];galleries[t].images_list=ewwwNggParseImageList(a.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var a=$(e).data("id");return galleries["gallery_"+a].images_list=ewwwNggParseImageList(galleries["gallery_"+a].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var a=e[t];if(void 0!==a["image-webp"]&&(e[t].image=a["image-webp"],delete e[t]["image-webp"]),void 0!==a["thumb-webp"]&&(e[t].thumb=a["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==a.full_image_webp&&(e[t].full_image=a.full_image_webp,delete e[t].full_image_webp),void 0!==a.srcsets)for(var r in a.srcsets)nggSrcset=a.srcsets[r],void 0!==a.srcsets[r+"-webp"]&&(e[t].srcsets[r]=a.srcsets[r+"-webp"],delete e[t].srcsets[r+"-webp"]);if(void 0!==a.full_srcsets)for(var i in a.full_srcsets)nggFSrcset=a.full_srcsets[i],void 0!==a.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=a.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-557BPPZ');</script>
+</head>
+<body class="post-template-default single single-post postid-288 single-format-standard">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-557BPPZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="ol-preloader"></div>
+
+<div class="ol-cookie-notice">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col">
+<p>Sajt secitsecurity.com koristi kolačiće (cookies) koji ne sadrže lične podatke i služe radi poboljšanja korisničkog iskustva veb stranice. Prisutnost na veb sajtu, podrazumeva da se posetioci slažu sa korišćenjem ovih kolačića. Za više detalja o zaštiti podataka pročitajte <a title="Zaštita privatnosti" href="#">Zaštitu privatnosti</a>.</p>
+</div>
+<div class="ol-col">
+<a href="#" class="ol-btn" id="confirm-cookie">
+Prihvatam </a>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="ol-header">
+<div class="ol-header-top">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-header-top-inner">
+<div class="ol-header-left">
+<p>Ljudi su najveći potencijal</p>
+</div>
+<div class="ol-header-right">
+<button id="header-contact-opener">
+<i class="ion-information-circled"></i> Kontakt </button>
+<div class="ol-search-opener">
+<button><i class="ion-search"></i>Pretraga</button>
+</div>
+<div class="ol-search-widget">
+<form id="header-search-form" action="https://www.secitsecurity.com/">
+<input type="search" name="s" placeholder="Pretraži..." value="">
+<button type="submit"><i class="ion-search"></i></button>
+</form>
+</div>
+<div class="ol-lang-switcher">
+<ul>
+<li class="active"><a href="https://network.openlink.rs/" title="Srpski (latinica)">SR</a></li>
+</ul>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="ol-header-contact" id="header-contact">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col text-center info-box">
+<i class="ion-location"></i>
+<p>Vojvođanski Bulevar 14/15, Pančevo</p>
+</div>
+<div class="ol-col text-center info-box">
+<i class="ion-iphone"></i>
+<p>+381 65 8338 028</p>
+</div>
+<div class="ol-col text-center info-box">
+<i class="ion-email"></i>
+<p><a href="../../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7c131a1a151f193c0f191f15080f191f090e150805521f1311">[email&#160;protected]</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="ol-header-bottom">
+<div class="ol-container">
+<div class="ol-header-inner">
+<div class="ol-logo-holder">
+<a href="../../../../index.html">
+<img src="https://static.openlink.rs/logotypes/secit-security.svg" alt="SECIT Security" title="SECIT Security"> </a>
+<div class="ol-tagline">
+<p>Agencija za informacionu bezbednost i digitalnu forenziku</p>
+</div>
+</div>
+<button class="ol-nav-opener">
+<span></span>
+</button>
+<nav class="ol-navigation"><ul id="primary-menu" class="menu"><li class="ol-menu-search">
+<div class="ol-search-widget">
+<form action="https://www.secitsecurity.com/">
+<input type="search" name="s" placeholder="Pretraga">
+<button type="submit"><i class="ion-search"></i></button>
+</form>
+</div>
+</li><li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-202"><a href="../../../../index.html">Početna</a></li>
+<li id="menu-item-391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-391"><a href="../../../../o-nama/index.html">O nama</a><i class="sub-open ion-chevron-down"></i>
+<ul class="sub-menu">
+<li id="menu-item-243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-243"><a href="../../../../menadzment/index.html">Naš tim</a></li>
+<li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a href="../../../../reference/index.html">Reference</a></li>
+</ul>
+</li>
+<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="../../../../outsourcing-it-bezbednosti/index.html">Outsourcing IT bezbednosti</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="../../../../seminari/index.html">Seminari</a></li>
+<li id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="../../../../profesionalne-obuke/index.html">Profesionalne obuke</a></li>
+<li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="../../../../procena-bezbednosti-it-sistema/index.html">Procena bezbednosti IT sistema</a></li>
+<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-398"><a href="../../../index.html">Blog</a></li>
+<li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+</ul></nav> </div>
+</div>
+</div>
+</header>
+ 
+<div id="page-content">
+<div class="ol-container">
+<div class="ol-breadcrumbs"><ul><li><a href="../../../../index.html">SECIT Security</a></li><li><a href="../../../index.html">Blog</a></li><li><a href="https://www.secitsecurity.com/blog/2018/">2018</a></li><li><a href="https://www.secitsecurity.com/blog/2018/06/">jun</a></li><li class="active">Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana</li></ul></div>
+
+<div class="ol-content-wrapper ol-sidebar-right">
+<div class="ol-row"><main class="ol-col ol-col-3-4">
+<article id="post-288" class="post-288 post type-post status-publish format-standard hentry category-uncategorized">
+<div class="ol-title">
+<h1>Sigurno upravljanje nalozima i lozinkama korisnika: Predostrožnost je najbolja odbrana</h1> <div class="ol-meta">
+<span class="posted-on"><i class="ion-ios-calendar-outline"></i> <a href="index.html" rel="bookmark"><time class="entry-date published" datetime="2018-06-04T11:52:43+02:00">04/06/2018</time><time class="updated" datetime="2019-08-29T03:14:11+02:00">29/08/2019</time></a></span><span><i class="ion-ios-clock-outline"></i> <a href="index.html" rel="bookmark">11:52</a></span><span><i class="ion-ios-person"></i> Tekst je objavljen u majskom izdanju časopisa Biznis & Finansije 2018</span><span><i class="ion-ios-timer-outline"></i> 7 minuta</span> </div>
+</div>
+<div class="ol-post-excerpt"><p>U vreme sve sofisticiranijih sajber napada koji prete da izazovu pogubne gubitke u poslovanju, prve mere zaštite odnose se na sigurno upravljanje nalozima i lozinkama korisnika. Da biste ih efikasno primenili, potrebno je da znate i na koji način razmišljaju hakeri, i šta je redosled najvažnijih koraka u odbrani od sajber zloupotreba. Sajber napadi mogu&#8230;</p>
+</div>
+<div class="clear">
+<p>U vreme sve sofisticiranijih sajber napada koji prete da izazovu pogubne gubitke u poslovanju, prve mere zaštite odnose se na sigurno upravljanje nalozima i lozinkama korisnika. Da biste ih efikasno primenili, potrebno je da znate i na koji način razmišljaju hakeri, i šta je redosled najvažnijih koraka u odbrani od sajber zloupotreba.</p>
+<p>Sajber napadi mogu biti motivisani različitim razlozima, ali svaki obavezno podrazumeva preuzimanje korisničkog naloga nekog od korisnika na sistemu, preko koga će dobiti pristup pojedinim kompanijskim resursima. Pri tom, što su veća ovlašćenja koja poseduje ukradeni nalog, poput Admin naloga na Windows operativnom sistemu ili root naloga na Unix/Linux sistemima, to su veće mogućnosti sajber napadača.</p>
+<p>Korisnički nalog se može zloupotrebiti na više načina, u zavisnosti od tehnika kojima se sajber napadač koristi. U nekim slučajevima u pitanju su napadi društvenog inženjeringa, kada napadač pokušava da prevari zaposlene u kompaniji kako bi došao do korisničkog imena i lozinke za pristup informacionom sistemu. U drugim slučajevima koriste se razne tehnike probijanja korisničkih lozinki različitim alatima napravljenim za ovu namenu, od kojih su najpoznatiji john the ripper i l0pht crack.</p>
+<h3>Najvažniji koraci u zaštititi korisničkog naloga</h3>
+<p>Zato je prilikom zaštite korisničkog naloga posebno važno obratiti pažnju na nekoliko stvari koje se odnose na upravljanje korisničkim nalozima. Prvo, potrebno je uvek raditi s grupama a ne s pojedinačnim korisnicima, jer na taj način se određena prava dodeljuju ili oduzimaju grupi i svim njenim članovima, a ne pojedinačnim korisnicima. Drugo, neophodno je neprestano pratiti korisničke naloge, što podrazumeva logovanje svih aktivnosti korisnika na sistemu.</p>
+<p>Treći važan korak zahteva da se posebno vodi računa o neaktivnim nalozima koji postoje na sistemu, jer hakeri mogu da ih reaktiviraju na različite načine. Poslednja ali možda i najbitnija mera predostrožnosti odnosi se na takozvane Shared accounts naloge, koje više ljudi koristi za pristup nekim resursima. Primera radi, kupi se samo jedna licenca nekog programa a potom se loguje više ljudi preko istog korisničkog imena i lozinke, po potrebi. Stoga stručnjaci preporučuju da se izbegava korišćenje ovakvih naloga, izuzev kada ne postoji druga mogućnost zbog skupih licenci.</p>
+<h3>Sprečavanje otkrivanja lozinke</h3>
+<p>Pored zaštite samog korisničkog naloga, potrebno je preduzeti mere koje će sprečiti, ili makar otežati otkrivanje lozinke. Prvo o čemu bi trebalo da vodimo računa jeste neophodni minimum složenosti lozinke (Password strength) da bismo je zaštitili, odnosno koje elemente bi obavezno morala da sadrži (mala slova, velika slova, brojevi i specijalni simboli). Druga mera se odnosi na isticanje (Expiration) korisničkog naloga ili lozinke, a njena prednost se ogleda u tome što zahteva od korisnika da periodično promeni svoju lozinku, ili da ponovo aktivira nalog i postavi novu lozinku u zavisnosti od polise.</p>
+<p>Treći preventivni korak jeste podešavanje koliko se puta može ponovo postaviti ista lozinka (Password history/reuse). Na ovaj način se onemogućava da korisnici stalno ponavljaju nekoliko istih lozinki, što ujedno otežava rad sajber napadaču na otkrivanju šifre. Još jedna važna mera odnosi se na minimalnu dužinu lozinke (Password length). Ovo podešavanje zavisi od tipa naloga i danas je standard da se za obične naloge koristi najmanje 8 karaktera, a za naloge administratora i privilegovane naloge najmanje 12 karaktera.</p>
+<p>Mera koja efikasno sprečava online napade poznata je kao Lockout i podrazumeva da se posle nekoliko pogrešno unetih lozinki zaključa korisnički nalog na određeni period, što praktično onemogućava online napad grubom silom. Podsetimo da je sam MS Windows operativni sistem podešen tako da se nakon pet pogrešnih pokušaja unošenja lozinke nalog zaključa na 3 do 5 minuta, a ovi parametri se mogu menjati po potrebi.</p>
+<p>Ono o čemu bi, takođe, trebalo povesti računa jeste proces oporavka lozinke u slučaju da je zaboravljena (Recovery), bilo da je taj proces automatizovan preko nekog portala, ili se za te potrebe poziva odgovorno lice koje će to uraditi direktno na sistemu. U oba slučaja postoje opasnosti: ukoliko se oporavak lozinke vrši automatski, neko može pokušati da promeni šifru postojećeg korisnika; u slučaju da sistem nije automatizovan već to radi čovek, mogu se koristiti tehnike socijalnog inženjeringa kako bi se on prevario i promenio lozinku.</p>
+<h3>Kako se hakuje lozinka?</h3>
+<p>Kada govorimo o načinima koji se koriste za otkrivanje lozinki, potrebno je najpre da se taj proces razdvoji u odnosu na to da li onaj koji to radi ima pristup samom sistemu (online) ili je uspeo da iskopira fajl sa heš vrednostima lozinki i da ih onda u lokalu obrađuje (offline).</p>
+<p>Postoji više metoda koje se koriste za otkrivanje lozinke. To može biti pogađanje na osnovu podataka koje onaj koji hakuje zna o korisniku (datum rođenja, ime članova porodice, ime kućnog ljubimca, automobil koji vozi i slično), ili tako što će pratiti šta korisnik radi na računaru i pokušati da sazna i lozinku koju unosi na tastaturi.</p>
+<p>Druga tehnika, sniffing, može se koristiti samo ako je lozinka u čistom (clear) tekstu, u suprotnom će haker doći samo do onih podataka koji mu neće biti od koristi. Ukoliko koristi metodu dictionary, potrebno je da ima dobar rečnik za različite jezike, a što je rečnik sveobuhvatniji to su šanse za otkrivanje lozinke veće, ali ne i sigurne jer ako se u lozinci ne nalazi smislena reč, neće biti moguće naći odgovarajuću vrednost.</p>
+<p>Još jedna tehnika koja se primenjuje jeste gruba sila (brute force), koja je vremenski izuzetno zahtevna jer je nužno ispitati sve moguće vrednosti kombinacije karaktera za određenu dužinu lozinke, što može potrajati i nekoliko vekova.</p>
+<h3>Šta izbegavati, a šta primeniti</h3>
+<p>Na osnovu analiziranih rizika, vrlo je važno da se korisnici pridržavaju nekoliko ključnih uputstava. Pre svega, nikada ne treba koristiti istu lozinku na više različitih mesta, jer ako neko uspe da je otkrije na jednom, sigurno će pokušati da isproba istu lozinku na drugom mestu. Lozinka se ne sme zapisivati na papiru i ostaviti ispod tastature, ili što je još gore zalepiti na monitor računara gde svako može da je vidi (ako već zapisujete lozinku, čuvajte je kod sebe u novčaniku ili negde gde može biti pod ključem). Prilikom odabira lozinke, treba voditi računa da se ne unose smislene reči koje je moguće otkriti upotrebom rečnika, kao i da se koristi složena lozinka sa svim potrebnim elementima i dužinom koja ne sme biti manja od 8 karaktera.</p>
+<p>Veoma je bitno da se lozinka ne unosi na stranici koja nema sertifikat, a što se može videti kroz zeleni katanac s leve strane u internet pretraživaču – u suprotnom, ne treba unositi podatke. Lozinka se ne sme slati nikada niti bilo kome elektronskom poštom ili otkrivati u razgovoru telefonom, jer neko može prisluškivati mrežu ili telefonsku liniju i na taj način doći do lozinke. Takođe, moguće je i da se neko posluži tehnikama socijalnog inženjeringa i pokuša da se predstavi kao neko drugi.</p>
+<p>Potrebno je da se koristi program za upravljanje lozinkama – Password manager je aplikacija čija je osnovna namena da čuva vaše različite šifre za pristupanje raznim sajtovima i aplikacijama. Osnovna ideja jeste da imate jedan glavni master ključ koji koristite za logovanje na Password menadžer aplikaciju i dovoljno je da upamtite samo njega, jer će se za sve ostale šifre brinuti sama aplikacija.</p>
+<p>Na kraju, potrebno je istaći da i pored svih tehničkih metoda zaštite uvek postoji rizik da zaposleni u kompaniji budu prevareni i da zato nenamerno otkriju korisničko ime i lozinku sajber napadaču. Da bi se ta opasnost sprečila, neophodno je sprovoditi stalnu edukaciju zaposlenih (security awareness training), kako bi bili upoznati sa najnovijim sigurnosnim pretnjama i kako ne bi nasedali na trikove sajber napadača koji postaju sve sofisticiraniji.</p>
+</div>
+</article>
+<div class="ol-social-share"><ul><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F" target="_blank" rel="noreferrer"><i class="ion-social-facebook"></i></a></li><li><a href="https://twitter.com/home?status=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F" target="_blank" rel="noreferrer"><i class="ion-social-twitter"></i></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F&amp;title=Sigurno%20upravljanje%20nalozima%20i%20lozinkama%20korisnika:%20Predostro%c5%benost%20je%20najbolja%20odbrana&amp;summary=U%20vreme%20sve%20sofisticiranijih%20sajber%20napada%20koji%20prete%20da%20izazovu%20pogubne%20gubitke%20u%20poslovanju,%20prve%20mere%20za%c5%a1tite%20odnose%20se%20na%20sigurno%20upravljanje%20nalozima%20i%20lozinkama%20korisnika.%20Da%20biste%20ih%20efikasno%20primenili,%20potrebno%20je%20da%20znate%20i%20na%20koji%20na%c4%8din%20razmi%c5%a1ljaju%20hakeri,%20i%20%c5%a1ta%20je%20redosled%20najva%c5%benijih%20koraka%20u%20odbrani%20od%20sajber%20zloupotreba.%20Sajber%20napadi%20mogu...&amp;source=" target="_blank" rel="noreferrer"><i class="ion-social-linkedin"></i></a></li><li><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F" target="_blank" rel="noreferrer"><i class="ion-social-googleplus"></i></a></li><li><a href="https://pinterest.com/pin/create/button/?url=&amp;media=https%3A%2F%2Fwww.secitsecurity.com%2Fblog%2F2018%2F06%2Fsigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana%2F&amp;description=U%20vreme%20sve%20sofisticiranijih%20sajber%20napada%20koji%20prete%20da%20izazovu%20pogubne%20gubitke%20u%20poslovanju,%20prve%20mere%20za%c5%a1tite%20odnose%20se%20na%20sigurno%20upravljanje%20nalozima%20i%20lozinkama%20korisnika.%20Da%20biste%20ih%20efikasno%20primenili,%20potrebno%20je%20da%20znate%20i%20na%20koji%20na%c4%8din%20razmi%c5%a1ljaju%20hakeri,%20i%20%c5%a1ta%20je%20redosled%20najva%c5%benijih%20koraka%20u%20odbrani%20od%20sajber%20zloupotreba.%20Sajber%20napadi%20mogu..." target="_blank" rel="noreferrer"><i class="ion-social-pinterest"></i></a></li><li><a href="../../../../cdn-cgi/l/email-protection.html#3a051c494f58505f594e0769535d4f4854551a4f4a485b4c56505b54505f1a545b56554053575b1a531a5655405354515b575b1a51554853495453515b001a6a485f5e55494e4855ff845455494e1a505f1a545b50585556505b1a555e58485b545b1c58555e4307524e4e4a490015154d4d4d14495f59534e495f594f48534e4314595557155856555d15080a0b02150a0c1549535d4f485455174f4a485b4c56505b54505f17545b56554053575b1753175655405354515b575b1751554853495453515b174a485f5e55494e4855405455494e17505f17545b50585556505b17555e58485b545b15" target="_blank" rel="noreferrer"><i class="ion-email"></i></a></li></ul></div>
+<nav class="navigation post-navigation" role="navigation" aria-label="Članci">
+<h2 class="screen-reader-text">Kretanje članka</h2>
+<div class="nav-links"><div class="nav-previous"><a href="../../05/izvestaj-sa-esecurity-2018-konferencije/index.html" rel="prev">Prethodni post</a></div><div class="nav-next"><a href="../../11/opasnost-zvana-iot/index.html" rel="next">Sledeći post</a></div></div>
+</nav>
+</main><aside id="secondary" class="widget-area ol-sidebar ol-col ol-col-4"><div id="nav_menu-2" class="widget widget_nav_menu ol-widget"><h3 class="widget-title">SECIT Security</h3><div class="menu-footer-buttons-menu-container"><ul id="menu-footer-buttons-menu" class="menu"><li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-271"><a href="../../../index.html">Blog</a></li>
+</ul></div></div></aside></div>
+</div>
+
+</div>
+</div>
+
+<footer class="ol-footer">
+<div class="ol-footer-flag">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="ol-footer-top">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-col-3">
+<a href="../../../../index.html">
+<img src="https://static.openlink.rs/logotypes/openlink-group-white.svg" class="ol-footer-logo" alt="OpenLink Group Logo" title="OpenLink Group Logo"> </a>
+</div>
+<div class="ol-col ol-col-3 text-center">
+<h4>Pratite nas na</h4><ul class="ol-social-links"><li><a href="https://www.facebook.com/secitserbia/"><i class="ion-social-facebook"></i></a></li><li><a href="https://www.linkedin.com/company/secit-security-consulting"><i class="ion-social-linkedin"></i></a></li></ul> </div>
+<div class="ol-col ol-col-3 text-right">
+<ul id="menu-footer-buttons-menu-1" class="ol-footer-red-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../../../kontakt/index.html">Kontakt</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-271"><a href="../../../index.html">Blog</a></li>
+</ul> </div>
+</div>
+</div>
+</div>
+<div class="ol-footer-bottom">
+<div class="ol-container">
+<div class="ol-row">
+<div class="ol-col ol-col-2">
+<ul id="menu-footer-menu" class="ol-footer-menu"><li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="../../../../pravila-koriscenja/index.html">Pravila korišćenja</a></li>
+<li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-403"><a href="../../../../politika-privatnosti/index.html">Politika privatnosti</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="../../../../kolacici/index.html">Kolačići</a></li>
+</ul> </div>
+<div class="ol-col ol-col-2 text-right">
+<p>Copyright © 2008 &#8211; 2019 OpenLink Grupa. Sva prava zadržana.<br />
+OpenLink Grupa nije odgovorna za sadržaj spoljnih sajtova.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+
+<div class="pswp__container">
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+<div class="pswp__item"></div>
+</div>
+
+<div class="pswp__ui pswp__ui--hidden">
+<div class="pswp__top-bar">
+
+<div class="pswp__counter"></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title="Share"></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+
+<div class="pswp__preloader">
+<div class="pswp__preloader__icn">
+<div class="pswp__preloader__cut">
+<div class="pswp__preloader__donut"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class="pswp__share-tooltip"></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class="pswp__caption">
+<div class="pswp__caption__center"></div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript'>
+/* <![CDATA[ */
+var OL = {"ajaxUrl":"https:\/\/www.secitsecurity.com\/wp-admin\/admin-ajax.php","cookie_expiration":"7"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../wp-content/themes/openlink-theme/assets/dist/js/script.js' defer onload=''></script>
+<script type='text/javascript' src='https://www.secitsecurity.com/wp-includes/js/comment-reply.min.js' defer onload=''></script>
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js' defer onload=''></script>
+</body>
+
+<!-- Mirrored from www.secitsecurity.com/blog/2018/06/sigurno-upravljanje-nalozima-i-lozinkama-korisnika-predostroznost-je-najbolja-odbrana/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jan 2020 11:31:25 GMT -->
+</html>
